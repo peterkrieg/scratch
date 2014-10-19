@@ -1,0 +1,113 @@
+ul {display: inline;}
+
+
+
+
+
+section.section1, section.section2 {
+	width: 40%;
+}
+
+
+section.section1 {
+	background: #3FC380;
+	float: left;
+	margin: 0 3.333333% 0 6.6666666%;
+}
+
+section.section2 {
+	background: #F2784B;
+	float: right;
+	margin: 0 6.666666% 0 3.33333%;
+}
+
+section h1{text-align: center;}
+
+section p {padding: 1% 5%;}
+
+
+footer{
+	top: 150%;
+	width: 80%;
+	background: #34495E;
+	margin: 0 10%;
+}
+
+.belowfooter p:first-line  {
+	color: red;
+}
+
+.belowfooter p:hover{color: green;}
+
+/*
+p::selection{
+	background: purple;
+	color: white;
+}*/
+
+
+
+::selection{background: green};
+
+
+
+a[href^="http"]{
+	color: orange;
+}
+
+
+
+
+
+
+/*THIS IS PART FOR THE DIV AT END I HAVE */
+.child>p:first-child {color: green;}
+
+ p:first-child{color: blue;}
+
+
+
+
+/*The table */
+
+#table {
+	border: 10px solid red;
+	margin-top: 30px;
+}
+
+#table table {
+	width: 100%;
+}
+
+#table table tr td {
+	width: 20%;
+	text-align: center;
+	border-right: 10px black solid;
+	padding: 5px 0 5px;
+	font-size: 1.5em;
+	font-family:  impact;
+}
+
+td:first-child {
+	border-left: 10px black solid;
+}
+
+tr:nth-child(odd){
+	background-color:yellow;
+}
+
+tr:nth-child(even){
+	background-color:#c6f9d8;
+}
+
+
+.textshadowpart{
+	margin: 400px 0;
+	text-shadow: 3px 3px 10px red;
+	font-size: 3em;
+}
+
+
+
+
+
