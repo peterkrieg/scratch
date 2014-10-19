@@ -111,3 +111,68 @@ tr:nth-child(even){
 
 
 
+
+
+
+
+
+
+
+/*THIS IS FOR THE INDEX 2 HTML FILE */
+
+
+
+
+.columns{
+	width: 100%;
+	border: 5px solid black;
+}
+
+.column {
+	max-width: 100%;
+	width: 20%;
+}
+
+.columns :first-child {
+	float: left;
+	margin: 2% 4% 2% 4%;
+}
+
+.columns :not(:first-child) {
+	float: right;
+	margin: 2% 4% 2% 0;
+}
+
+.columns p {
+	padding: 50px;
+	border: 5px solid black;
+	background-color: #f9d74f;
+}
+
+
+
+/*RESPONSIVE PART*/
+
+
+@media screen and (min-width: 280px) {  
+	.column {
+		width: 92%;  
+	}  
+}  
+
+@media screen and (min-width: 680px) {  
+	.column {
+		width: 44%;  
+	}  
+} 
+
+@media screen and (min-width: 1180px) {  
+	.column {
+		width: 20%;  
+	}  
+} 
+
+
+
+
+
