@@ -9,18 +9,22 @@ window.onload = init();
 var x = 200;
 var y = 200;
 var radius = 20;
+var color = getRandomColor();
 
 
 
 
 function init(){
 	onEachStep();
+
+
 	with(context){
-		moveTo(50, 50);
-		beginPath();
-		lineTo(100, 100);
-		stroke();
-		console.log('text');
+		fillStyle = color;
+    beginPath();
+    arc(10, 10, radius, 0, 2*Math.PI, true);
+    closePath();
+    fill();
+    console.log('text');
 	}
 }
 
@@ -34,7 +38,6 @@ function onEachStep(){
 
 
 function drawFrame(){
-	var color = getRandomColor();
 	with(context){
 		// clearRect(0, 0, canvas.width, canvas.height); 
     fillStyle = color;
