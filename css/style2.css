@@ -4,9 +4,13 @@ body section div {
 	margin: 1%;
 }
 
-div :nth-child(1){
-	color: blue;
+div:nth-child(1){
+	color: #663399;
 
+}
+
+.sec1{
+	background: #F1A9A0;
 }
 
 
