@@ -4,6 +4,10 @@ body section div {
 	margin: 1%;
 }
 
+section{
+	margin: 100px 0;
+}
+
 div :nth-child(1){
 	color: #223399;
 
@@ -12,6 +16,114 @@ div :nth-child(1){
 .sec1{
 	background: #F1A9A0;
 }
+.sec2{
+	background: #4183D7;
+}
+
+
+::selection{
+	color:orange;
+	background-color: purple;
+}
+
+p[title]{
+	color: red;
+}
+
+p[title='blah2']{
+	color: green;
+}
+
+
+p[title$='3']{
+	color: yellow;
+}
+
+.sec2 p[title*='test']{
+	color: orange;
+}
+
+.sec2 p[title^='test']{
+	color: white;
+}
+
+.sec2 p[title$='test']{
+	color:black;
+}
+
+body>:first-child{
+	background: #6C7A89;
+}
+
+body>:nth-child(2){
+	background: #4183D7;;
+}
+
+
+
+/*THe table part*/
+
+.sec3 table{
+	background: #EEE;
+}
+
+.sec3 table td{
+	width: 16.666%;
+	text-align: center;
+	padding: 10px 0 0 0 ;
+	letter-spacing: px;
+}
+
+.sec3 tr:nth-child(odd){
+	background: #F27935;
+	color: white;
+}
+
+.sec3 td:not(:nth-child(odd)){
+	color: red;
+}
+
+
+/*Here the specificty points add up to 11, which isn't enough
+to override the rule above, which has specificy points of
+20 (class and pseudo-class)*/
+.sec3 td{
+	color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
