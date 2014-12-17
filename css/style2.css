@@ -1,11 +1,38 @@
+body{
+	background-color: #E4F1FE;
+}
+
+div{
+	margin: 0;
+	padding: 0;
+}
+
+p, td{
+	font-size: 20px;
+}
+
+
+::selection{
+	color:orange;
+	background-color: purple;
+}
+
+
 body section div {
 	width: 30%;
+	margin: 1.66666%;
 	display: inline-block;
-	margin: 1%;
+	background-color: rgba(240, 60, 30, .5);
+	font-size: 12px;
+	border: 5px solid black;
+	border-radius: 10px/20px;
+	box-sizing: border-box;  /* this makes total width include border */
 }
 
 section{
-	margin: 100px 0;
+	padding: 100px 0;
+	margin: 200px 0;
+	font-size: 0;
 }
 
 div :nth-child(1){
@@ -21,17 +48,14 @@ div :nth-child(1){
 }
 
 
-::selection{
-	color:orange;
-	background-color: purple;
-}
+
 
 p[title]{
 	color: red;
 }
 
 p[title='blah2']{
-	color: green;
+	color: rgba(40, 100, 200, .8);
 }
 
 
@@ -61,10 +85,14 @@ body>:nth-child(2){
 
 
 
-/*THe table part*/
+
+
+
+/*THe table part, (section 3)*/
 
 .sec3 table{
 	background: #EEE;
+	width: 100%;
 }
 
 .sec3 table td{
@@ -87,11 +115,29 @@ body>:nth-child(2){
 /*Here the specificty points add up to 11, which isn't enough
 to override the rule above, which has specificy points of
 20 (class and pseudo-class)*/
+
 .sec3 td{
 	color: green;
 }
 
 
+
+
+/*section 4*/
+
+
+.sec4 div{
+	width: 60%;
+	height: auto;
+	margin: 0 20%;
+	background: #26A65B;
+}
+
+.sec4 div p{
+	margin: 20px;
+	font-size: 2em;
+	background-color: white;
+}
 
 
 
