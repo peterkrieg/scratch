@@ -10,11 +10,24 @@
 .div2{
 	display: block;
 	width: 100%;
-	height: 500px;
-	background-image: url(../img/bg.jpg);
+	height: 700px;
+	background-image: url(../img/patagonia.jpg);
 	background-repeat: repeat;
 	background-position: center bottom;
 	background-attachment: fixed;
+	background-size: cover;
+}
+
+.image1{
+		background-image: url(../img/patagonia.jpg);
+	}
+
+.image2{
+	background-image: url(../img/patagonia2.jpg);
+}
+
+.image3{
+	background-image: url(../img/patagonia3.jpg);
 }
 
 .sec2{
