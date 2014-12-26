@@ -1,0 +1,16 @@
+.textarea{
+	text-align: center;
+}
+
+.textarea textarea{
+	width: 80%;
+	background-color: rgb(200, 247, 197);
+	margin-left: 0;
+	padding-left: 0;
+}
+
+select{
+	display: block;
+	width: 50%;
+	height: 100px;
+}
