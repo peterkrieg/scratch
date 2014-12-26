@@ -70,15 +70,108 @@ p{padding-top: 10px;}
 	text-decoration: none;
 	float: left;
 	background-color: red;
-	border: 2px solid black;
+	border: 2px ridge black;
+	border-right: none;
 	width: 16.66666%;
 	text-align: center;
 	font-size: 1.25em;
 }
 
+.navbar ul li:last-child{
+	border-right: 2px ridge black;
+}
+
 .navbar ul li:hover{
 	background-color: green;
 }
+
+
+
+
+.transform {
+	text-align: center;
+}
+
+.transform div{
+	width: 19%;
+	background-color: rgb(68,108,179);
+	color: white;
+	border-radius: 5px;
+	border-top-right-radius: 20px;
+	margin-top: 100px;
+	display: inline-block;
+}
+
+.transform div p{
+	padding: 20px;
+}
+
+.transform div:hover{
+	transform: rotate(10deg);
+	transform-origin: right bottom;
+}
+
+
+.transform div.scale:hover{
+	transform: scale(2);
+}
+
+.transform .skew1:hover{
+	transform: skew(20deg, 0deg);
+}
+
+.transform .skew2:hover{
+	transform: skew(-20deg, 10deg);
+}
+
+.transform .skew3:hover{
+	transform: skew(25deg, 10deg);
+}
+
+
+/*--------This is for the transitions part----------*/
+
+section.transition{
+	margin-top: 100px;
+}
+
+.transition .button{
+	width: 20%;
+	border-radius: 10px;
+	background-color: blue;
+	color: black;
+	transition-property: background-color, color;
+	transition-duration: .5s;
+	transition-timing-function: ease-in;
+}
+
+.transition .button p{
+	padding: 20px;
+}
+
+.transition .button:hover{
+	background-color: red;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
