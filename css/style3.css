@@ -162,7 +162,55 @@ section.transition{
 
 
 
+/*This is for the animation part*/
 
+section.animation{
+	height: 500px;
+	margin-top: 100px;
+}
+
+
+
+
+.animation div{
+	width: 30%;
+	background-color: yellow;
+	border-radius: 5px;
+}
+
+.animation div p{
+	padding: 50px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+@keyframes slideInDown{
+	0%{
+		color: red;
+	}
+	100%{
+		color: blue;
+	}
+}
+
+
+
+
+
+
+div.slideInDown {
+  animation-name: slideInDown;
+  animation-duration: 2s;
+  -webkit-animation-name: slideInDown;
+  -webkit-animation-duration: 2s;
+  -moz-animation-name: slideInDown;
+  -moz-animation-duration: 2s;
+}
 
 
 
