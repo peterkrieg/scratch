@@ -195,9 +195,11 @@ section.animation{
 	}
   	50%{
   		background-color: orange;
+  		transform: scale(1.5);
   	}
 	100% {
 		background-color: green;
+		transform: scale(2);
 	}
 }@keyframes slideInDown{
 	0% {
@@ -205,32 +207,73 @@ section.animation{
 	}
   	50%{
   		background-color: orange;
+  		transform: scale(1.5);
+
   	}
 	100% {
 		background-color: green;
+		transform: scale(2);
 	}
 }
 
-
-
-
-
-
-div.slideInDown:hover {
-  -webkit-animation-name: slideInDown;
-  -moz-animation-name: slideInDown;
-  -ms-animation-name: slideInDown;
-  -o-animation-name: slideInDown;
-  animation-name: slideInDown;
-  -webkit-animation-duration: 10s;
-  -moz-animation-duration: 10s;
-  -ms-animation-duration: 10s;
-  -o-animation-duration: 10s;
-  animation-duration: 10s;
+div.slideInDown:hover{
+	-webkit-animation-name:slideInDown;
+	    animation-name:slideInDown;
+  	-webkit-animation-duration: 5s;
+  	  animation-duration: 5s;
+  	-webkit-animation-fill-mode: forwards;
+  	  animation-fill-mode: forwards;
+  	-webkit-animation-timing-function: ease-in-out;
+  		animation-timing-function: ease-in-out;
+  	
 }
 
 
 
+
+
+@-webkit-keyframes circlerotate{
+	0%{
+		background-color: green;
+    }
+  50%{
+  	-webkit-transform: rotate(1080deg;);
+  	        transform: rotate(1080deg;)
+  }
+  100%{
+  	-webkit-transform: scale(2);
+  	        transform: scale(2);
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+  
+  
+@keyframes circlerotate{
+	0%{
+		background-color: green;
+    }
+  50%{
+  	-webkit-transform: rotate(1080deg;);
+  	        transform: rotate(1080deg;)
+  }
+  100%{
+  	-webkit-transform: scale(2);
+  	        transform: scale(2);
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+  
+  
+div.circlerotate:hover{
+	-webkit-animation: circlerotate 2s 10 ease-in-out alternate forwards;
+	        animation: circlerotate 2s 10 ease-in-out alternate forwards;
+}
 
 
 
