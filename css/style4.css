@@ -45,3 +45,73 @@ section.floats{
 	padding-top: 10px;
 	border: 2px solid black;
 }
+
+
+
+/*Positioning section*/
+
+.position{
+/*	margin-top: 100px;
+*/}
+
+.position div.navbar{
+	width: 100%;
+	background-color: rgb(103, 65, 114);
+	height: 50px;
+	position: fixed;
+	color: white;
+}
+
+.position div.navbar ul{
+	list-style-type: none;
+	width: 90%;
+	margin-left: 5%;
+	padding-left: 0;
+	vertical-align: middle;
+	margin-top: 10px;
+}
+
+.position div.navbar ul li{
+	width: 16.666%;
+	background-color: red;
+	padding: 5px 0;
+	margin: 0;
+	float: left;
+	text-align: center;
+	border: 3px solid black;
+	border-right: none;
+}
+
+.position div.navbar ul li:last-child{
+	border-right: 3px solid black;
+}
+
+.position div.navbar ul li:hover{
+	background-color: yellow;
+	color: black;
+}
+
+div.blocks{
+	padding-top: 200px;
+}
+
+.position div.block{
+	width: 20%;
+	height: 100px;
+	background-color: rgb(38, 166, 91);
+	color: rgb(239, 72, 54);
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+
+@media (max-width: 800px){
+	.position div.block{
+		width: 45%;
+	}
+}
+
+
+
+
