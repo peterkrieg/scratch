@@ -112,6 +112,69 @@ div.blocks{
 	}
 }
 
+section.stack{
+	clear: both;
+	position: relative;
+	top: 100px;
+	background-color: rgb(34, 167, 240);
+	height: auto;
+}
+
+.stack div{
+	width: 50%;
+	padding: 15px;
+}
+
+.stack>div.div1{
+	position: relative;
+	width: 50%;
+	margin-left: 25%;
+	background-color: yellow;
+	height: auto;
+	clear: both;
+	top: 20px;
+}
+
+.div2{
+	background-color: red;
+	z-index: 1;
+	padding-top: 0;
+	position: relative;
+	margin-top: 40px;
+	padding: 5px;
+}
+
+.div3{
+	background-color: green;
+	position: relative;
+	margin, padding: 0;
+	z-index: 10;
+	display: inline-block;
+	margin-top: -30px;
+}
+
+.div4{
+	background-color: orange;
+	position: relative;
+	margin, padding: 0;
+	top: 0px;
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
