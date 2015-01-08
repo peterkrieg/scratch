@@ -1,0 +1,11 @@
+section.chap2{
+	color: green;
+}
+
+p:first-letter{
+	color: red;
+}
+
+p{
+	background-color: yellow;
+}
