@@ -6,19 +6,27 @@ p:first-letter{
 	color: red;
 }
 
-p{
+section.chap2 p{
 	background-color: lightgreen;
 	width: 50%;
 	margin: auto;
 	font-size: 2.5em;
 }
 
-
-
-section.sec{
-	margin-top: 100px;
+section.sec2 p{
+	width: 50%;
+	background: lightblue;
+	margin: auto;
+	font-size: 2.5em;
 }
+
+
 
 section.sec3 div{
 	color: orange;
+}
+
+.center{
+	margin: auto;
+	text-align: center;
 }
