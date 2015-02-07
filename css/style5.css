@@ -3,7 +3,7 @@ section.chap2{
 }
 
 p:first-letter{
-	color: red;
+	color: purple;
 }
 
 section.chap2 p{
@@ -24,9 +24,32 @@ section.sec2 p{
 
 section.sec3 div{
 	color: orange;
+	font-size: 1.5em;
+}
+
+section.sec3 div:nth-of-type(1){
+	margin-top: 100px;
+	color: green;
 }
 
 .center{
 	margin: auto;
 	text-align: center;
+}
+
+p#domtest.cool{
+	color: yellow;
+}
+
+p#domtest.hot{
+	color: orange;
+}
+
+.hot2{
+	color: steelblue;
+	background: red;
+}
+
+section.sec3 div.blah2{
+	color: red;
 }
