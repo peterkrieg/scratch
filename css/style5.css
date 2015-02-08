@@ -53,3 +53,13 @@ p#domtest.hot{
 section.sec3 div.blah2{
 	color: red;
 }
+
+footer{
+	background: lightgreen;
+	color: darkred;
+}
+
+html body ul#alist .coolio{
+	color: purple;
+	background: yellow;
+}

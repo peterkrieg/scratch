@@ -81,10 +81,36 @@ var testingContent = testing.innerHTML;
 console.log(testingContent);
 console.log(testing.innerHTML);
 
+var newDiv = document.createElement('div');
+var divText = document.createTextNode('this is some text for a new div');
+newDiv.appendChild(divText);
+var position = document.getElementsByClassName('blah1')[1];
+position.appendChild(newDiv);
+console.log(newDiv.length);
 
 
 
+var elRemove = document.getElementById('removingitem');
+var elRemoveParent = document.getElementsByClassName('removing')[0];
+elRemoveParent.removeChild(elRemove);
 
+
+var footer = document.getElementById('checking');
+var footerClass = footer.getAttribute('class');
+console.log(footerClass)
+console.log(footerClass[0]);
+if(footer.hasAttribute('hot')){
+	window.alert('has it!!');
+}
+console.log(typeof(footerClass));
+
+var listitem4 = document.querySelectorAll('#alist li')[3];
+listitem4.className= 'coolio';
+// listitem4.removeAttribute('class');
+
+// this code would replace the entire body with a short sentence, just by overriding everything
+// var body = document.getElementsByTagName('body')[0];
+// body.innerHTML = 'hello world!!';
 
 
 
