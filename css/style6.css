@@ -32,3 +32,34 @@ p.cool{
 	width: 20%;
 	margin-left: 40%;
 }
+
+ul.removeul{
+	text-align: center;
+	list-style-type: none;
+	margin-top: 100px;
+	font-size: 1.9em;
+	font-family: Impact;
+	color: pink;
+}
+
+ul.removeul li{
+	background: darkblue;
+	margin: 5px 0;
+}
+
+ul.transitionul{
+	margin-top: 200px;
+	list-style-type: none;
+	text-align: center;
+	-webkit-perspective: 800px;
+}
+
+
+
+.coolTransitionTime{
+	color: red;
+	background: purple;
+	transform: translate3d(50px, -100px, 400px);
+	transform: translateX(45deg);
+	transition: 3s ease-in-out;
+}

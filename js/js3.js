@@ -47,5 +47,85 @@ var blahblah2 = document.getElementsByClassName('blahblah2')[0];
 blahblah2.addEventListener('click', changeText2, false);
 
 
+// This is code to remove list items
+
+function getTarget(e){
+	if (!e){
+		e = window.event;	
+	}
+	return e.target || e.srcElement;
+}
+
+function removeListItem(e){
+	var target, elParent;
+	target = getTarget(e);
+	elParent=target.parentNode;  
+	elParent.removeChild(target);
+}
+
+
+var removeul = document.getElementsByClassName('removeul')[0];
+removeul.addEventListener('click', function(e){
+	removeListItem(e);
+}, false);
+
+
+//  Code for transition of list items
+
+function getTarget(e){
+	if(!e){
+		e=window.event;
+	}
+	return e.target || e.srcElement;
+}
+
+function transitionItem(e){
+	var target, elParent;
+	target = getTarget(e);
+	elParent = target.parentNode;
+	elParent.className = elParent.className + ' coolTransitionTime';
+	e.preventDefault(); // This prevents link from going anywhere
+}
+
+var transitionul = document.getElementsByClassName('transitionul')[0];
+transitionul.addEventListener('click', function(e){
+	transitionItem(e);
+}, false);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
