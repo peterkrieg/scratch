@@ -13,10 +13,6 @@ function printChar(e){
 		body.appendChild(newDiv);
 		newDiv.textContent ='div created!!!!'
 		counter++;
-		if(counter >5){
-			counter = 0;
-			body.innerHTML = '';
-		}
 	}
 }
 
