@@ -25,9 +25,23 @@
 	}
 
 	div.color1{
-		-skrollr-data-0: 'background: rgb(200,200,100);';
-
+		-skrollr-animation-name: animation1;
 	}
 
 }
 
+
+
+$about_section_begin: 0;
+$about_section_duration: 200;
+$about_section_end: $about_section_begin + $about_section_duration;
+
+@-skrollr-keyframes animation1 {
+    skrollr-#{$about_section_begin} {
+    		background: rgb(200, 200, 100);
+    }
+
+    skrollr-#{$about_section_end} {
+    		background: rgb(100, 0, 20);
+    }
+}

@@ -18,6 +18,12 @@
   background: lightblue;
   margin: 100px auto; }
 .index15 div.color1 {
-  -skrollr-data-0: 'background: rgb(200,200,100);'; }
+  -skrollr-animation-name: animation1; }
+
+@-skrollr-keyframes animation1 {
+  skrollr-0 {
+    background: #c8c864; }
+  skrollr-200 {
+    background: #640014; } }
 
 /*# sourceMappingURL=style11.css.map */
