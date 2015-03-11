@@ -1,3 +1,23 @@
-
+.index15 div.headerContainer {
+  height: 100px;
+  text-align: center; }
+.index15 h1 {
+  display: inline-block;
+  margin: auto;
+  background: purple;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom; }
+.index15 p.junkText {
+  width: 50%;
+  margin-left: 25%;
+  font-size: 60px; }
+.index15 div.color {
+  width: 1000px;
+  height: 100px;
+  background: lightblue;
+  margin: 100px auto; }
+.index15 div.color1 {
+  -skrollr-data-0: 'background: rgb(200,200,100);'; }
 
 /*# sourceMappingURL=style11.css.map */
