@@ -7,8 +7,8 @@ $(function(){
 TweenMax.staggerTo('.box', 1, {
 	x: 200,
 	scale: .6,
-	rotation: 90
-},
+	rotation: 90,
+}
 .3
 )
 
