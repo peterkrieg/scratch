@@ -1,0 +1,36 @@
+*{
+	font-size: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+html, body{
+	height: 100%;
+	background: lightblue;
+}
+
+.full-page{
+	height: 100%;
+	vertical-align: middle;
+	margin-top: auto;
+	border-bottom: 5px solid darkblue;
+	overflow: hidden;
+}
+
+
+.container{
+	background: lightyellow;
+}
+
+p{
+	// margin-top: -100px;
+	position: relative;
+	top: 50%;
+	&.smaller{
+		font-size: 15px;
+	}
+}
+
+
+
+
