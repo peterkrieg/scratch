@@ -32,5 +32,18 @@ p{
 }
 
 
-
+.box{
+	height: 200px;
+	width: 200px;
+	margin: 200px auto;
+	background: green;
+	border-right: 5px solid red;
+	p{
+		position: static;
+		color: white;
+		padding-top: 50px;
+		font-size: 20px;
+		text-align: center;
+	}
+}
 
