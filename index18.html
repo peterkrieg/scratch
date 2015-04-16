@@ -17,23 +17,68 @@
 
 <body>
 
-	<header>
-		<p> this is where the header goes  </p>
-	</header>
+	<h1>This is Practice of ScrollMagic</h1>
 
-	<section>
-		<p> Here is a section </p>
-	</section>
+	<div id="trigger">
+		<p>Trigger</p>
+	</div>
 
-	<footer>
-		<p>  This is the footer  </p>
-	</footer>
+	<p class="filler">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores obcaecati provident aliquam, impedit quidem iusto voluptatibus temporibus nihil error id est! Adipisci atque aut nostrum, recusandae, quae magnam repellat est.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint distinctio autem, officia facilis molestiae veniam beatae, a deserunt laborum, optio earum laudantium atque aliquam, rerum incidunt hic repellat similique ratione?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt atque amet, officiis consectetur adipisci debitis vero suscipit in doloribus, pariatur ipsa, accusantium aspernatur ab minima fugiat consequuntur distinctio, voluptates! Corrupti.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt deleniti eos quibusdam enim excepturi. Ea, aspernatur sed excepturi beatae, quod consequatur nisi, debitis blanditiis tempore vero vitae asperiores necessitatibus iure?</p>
+
+	<p>Hello world!!</p>
+
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
 
 
 
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script>
-<script src="js/js11.js"></script>
+
+
+
+
+	<div class="triggerLine"></div>
+
+	<div class="box2">
+		
+	</div>
+
+
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js"></script>
+
+	<script>
+		var controller = new ScrollMagic.Controller();
+
+		TweenMax.staggerTo('.box', 1, {
+			x: 200,
+			scale: .6,
+			rotation: 90
+		},
+		.3
+		)
+
+
+
+	// Trying to work Scrollmagic on box2
+
+
+	var scene = new ScrollMagic.Scene({
+		triggerElement: ".triggerLine"
+	})
+		// .setTween(".box2", 0.5, {backgroundColor: "green", scale: 2.5}) // trigger a TweenMax.to tween
+		.addTo(controller);
+
+
+
+
+	</script>
+
+
+
+	<!--<script src="js/js11.js"></script>-->
 </body>
 </html>
