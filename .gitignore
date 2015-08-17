@@ -3,6 +3,7 @@ css/.sass-cache
 
 #ignores all files ending with .css
 *.css
+*.DS_Store
 
 #ignores all files ending with .css.map
 *.css.map
