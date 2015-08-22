@@ -1,5 +1,5 @@
 #This ignores the .sass-cache folder by itself
-css/.sass-cache
+.sass-cache/
 
 #ignores all files ending with .css
 *.css
