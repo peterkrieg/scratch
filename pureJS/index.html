@@ -45,20 +45,108 @@
 // console.log(peter);
 
 
-var globalVariable = "This is global";
+// var globalVariable = "This is global";
 
-function sayStuff(){
-	var globalVariable = "This is local";
-	console.log(window.globalVariable);
-	console.log(globalVariable);
-}
-
-
-
-sayStuff();
+// function sayStuff(){
+// 	var globalVariable = "This is local";
+// 	console.log(window.globalVariable);
+// 	console.log(globalVariable);
+// }
 
 
 
+// sayStuff();
+
+// --------------------------------------------------------------
+
+// var Person = function(name, age){
+// 	this.name = name;
+// 	this.age = age;
+// 	this.sayName = function(){
+// 		console.log('my name is '+name);
+// 	}
+// };
+
+// var peter = new Person('peter', 25);
+// console.log(peter.name);
+// peter.sayName();
+
+// Person.prototype.sayAge = function(){
+// 	console.log('age is '+this.age);
+// }
+
+// peter.sayAge();
+
+// var Male = new Person();
+
+// ---------------------------------------------------------
+
+// function absValue(num){
+// 	if(num>=0){
+// 		return num;
+// 	}
+// 	else if(num<0){
+// 		return num*-1;
+// 	}
+// 	else throw "Must input a number";
+// }
+
+// try{
+// 	console.log(absValue(12));
+// 	absValue('blha');
+// }
+
+// catch(error){
+// 	console.log('something went wrong: '+error);
+// }
+
+// ---------------------------------------------
+
+
+// var str = "How are you doing today?";
+// var strSplit = str.split(' ');
+// console.log(strSplit, typeof strSplit);
+
+
+// strJoin = strSplit.join(' ');
+// console.log(strJoin, typeof strJoin);
+
+
+// ----------------------------
+
+// function Animal(){
+// 	this.respondsToLife = true;
+// }
+
+// var peterTheRabbit = new Animal();
+// console.log(peterTheRabbit.respondsToLife);
+
+// Animal.prototype.alive = true;
+// console.log(peterTheRabbit.alive);
+
+// -------------------------------------------
+
+// var hotel = {
+// 	size: "large",
+// 	occupancy: 100,
+// 	openRooms: true,
+// 	checkAvailability: function(){
+// 		if(this.openRooms){
+// 			return 'there are open rooms available!!';
+// 		}
+// 		else{
+// 			return 'there are no open rooms.  sorry!!';
+// 		}
+// 	}
+// }
+
+// console.log(hotel.checkAvailability());
+
+// for(var property in hotel){
+// 	console.log(property, hotel[property]);
+// }
+
+// ----------------------------------------
 
 
 
