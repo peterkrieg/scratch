@@ -2,8 +2,6 @@ $(function(){
 
 
 	var controller = new ScrollMagic.Controller();
-
-
 	
 	var scene = new ScrollMagic.Scene({
 		triggerElement: ".triggerLine",
@@ -76,12 +74,6 @@ $(function(){
 	$('.hoverBox').mouseout(function(){
 		$(this).css('background', 'tomato');
 	});
-
-
-
-
-
-
 
 controller.addScene([
 		scene, 
