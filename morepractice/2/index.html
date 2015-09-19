@@ -2,32 +2,132 @@
 <html lang="en-us">
 <head>
 	<meta charset="UTF-8">
-	<!-- JQUERY CDN -->
-	<!--<script src="http://code.jquery.com/jquery-2.1.3.min.js"> </script>-->
-	<!-- Latest compiled and minified CSS -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
-	<!-- Latest compiled and minified JavaScript -->
-	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
-
-	<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
-	
-	<link rel="stylesheet" href="practice.css">
-	
 </head>
-
 <body>
+	<h1>More JavaScript Practice, view in console</h1>
+	<ul>
+		<li>list item 1</li>
+		<li>list item 2</li>
+		<li>list item 3</li>
+		<li>list item 4</li>
+		<li>list item 5</li>
+	</ul>
+	<script src="jquery-2.1.4.min.js"></script>
+	<script>
+		$(function(){
+			$('h1').hide().css('background', 'red').fadeIn(1500);
 
-	<header>
-		<p> this is where the header goes  </p>
-	</header>
 
-	<section>
-		<p> Here is a section </p>
-	</section>
 
-	<footer>
-		<p>  This is the footer  </p>
-	</footer>
 
+
+		// Practice with inheritance, using function from node js, saw on some youtube video
+		// Copied code from https://github.com/nodejs/node-v0.x-archive/blob/master/lib/util.js#L634-L644
+
+		function inherits(ctor, superCtor) {
+			ctor.super_ = superCtor;
+			ctor.prototype = Object.create(superCtor.prototype, {
+				constructor: {
+					value: ctor,
+					enumerable: false,
+					writable: true,
+					configurable: true
+				}
+			});
+		}
+
+		var Animal = function(){
+			this.alive = true;
+		};
+
+		var Dog = function(breed, age, name){
+			// Crucial step to call the parent function of dog, to pass on info
+			Dog.super_.call(this);
+			this.breed = breed;
+			this.age = age;
+			this.bark = function(){
+				console.log('woof!!  I am a ' +breed+ ' dog and I am ' +age+ ' years old!!');
+			};
+		};
+
+		var Terrier = function(weight){
+			this.weight = weight;
+			Terrier.super_.call(this, 'terrier', 5, 'bobbytheterrier');
+			this.alive = 'very alive!!';
+		};
+
+		var IrishTerrier = function(homeCity){
+			this.homeCity = homeCity;
+			IrishTerrier.super_.super_.call(this, 'terrier', 15, 'jack');
+			IrishTerrier.super_.call(this, '20pounds');
+			this.alive = true;
+		};
+
+
+		// step to create class of dog that inherits from Animal
+		//   Animal -->  Dog  --> Terrier  -->  Irish Terrier
+		inherits(Dog, Animal);
+		inherits(Terrier, Dog);
+		inherits(IrishTerrier, Terrier);
+
+		var penguin = new Animal();
+		var ricky = new Dog('terrier', 5);
+		var bobby = new Terrier(22);
+		var jack = new IrishTerrier('Dublin');
+
+		console.log(penguin.alive);
+		console.log(ricky.alive);
+		console.log(bobby.alive);
+
+		console.log(bobby.breed);
+
+
+		// Tests on jack, farthest down on chain of inheritance
+
+		console.log(jack.alive);
+		console.log(jack.breed, jack.age);
+		console.log(jack.weight);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
 </body>
 </html>
