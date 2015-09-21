@@ -1,6 +1,21 @@
 <!doctype html>
 <html lang="en-us">
 <head>
+	<style>
+		li{
+			height: 80px;
+		}
+		div{
+			width: 300px;
+			height: 20px;
+			margin: auto;
+			background: lightblue;
+			text-align: center;
+		}
+		div:hover{
+			cursor: pointer;
+		}
+	</style>
 	<meta charset="UTF-8">
 </head>
 <body>
@@ -12,9 +27,37 @@
 		<li>list item 4</li>
 		<li>list item 5</li>
 	</ul>
+
+	<div>CLICK ME!</div>
+
 	<script src="jquery-2.1.4.min.js"></script>
 	<script>
 		$(function(){
+
+			var $list = $('ul');
+
+			$('div:focus').blur();
+
+			$('div').on('click', function(e){
+				var location = e.pageX;
+				console.log('location is: ' +location);
+				$list.append('<li>The location is: ' +location);
+			});
+
+			$list.children().eq(2).css('background', 'darkblue');
+			$list.children(':lt(2)').css('background', 'tomato');
+			$list.children(':gt(2)').css('background', 'steelblue');
+
+			$(window).on('scroll', function(e){
+				console.log($('div').offset());
+			});
+
+
+
+
+			// First part of practice, basic jquery
+
+
 			$('h1').hide().css('background', 'red').fadeIn(1500);
 
 
@@ -101,6 +144,10 @@
 
 
 
+
+
+
+
 	});
 
 
@@ -128,6 +175,6 @@
 
 
 
-	</script>
+</script>
 </body>
 </html>
