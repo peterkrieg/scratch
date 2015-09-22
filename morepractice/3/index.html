@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+	<link rel="stylesheet" href="../reset.css">
+	<meta charset="UTF-8">
+	<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+
+	<style>
+		ul{
+			position: relative;
+			height: 60px;
+			font-size: 0;
+			background: steelblue;
+		}
+		li{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			color: tomato;
+			text-align: center;
+			font-size: 30px;
+			width: 33.33333%;
+			display: inline-block;
+		}
+		li:hover{
+			cursor: pointer;
+			color: darkgoldenrod;
+		}
+
+		div.container{
+			width: 90%;
+			margin: auto;
+			margin-top: 50px;
+			background: #eee;
+			min-height: 300px;
+		}
+		div.container p{
+			font-size: 40px;
+			color: darkgreen;
+			text-align: center;
+			padding-top: 100px;
+		}
+	</style>
+</head>
+<body>
+<ul>
+	<li class="current" data-link="index.html">Here is a link</li>
+	<li data-link="index2.html">Here is another link</li>
+	<li data-link="index3.html">Here is another link</li>
+</ul>
+
+<div class="container">
+	<p>Here is some content.  this is the home page.  Cool huh..</p>
+</div>
+	
+<script src="../jquery-2.1.4.min.js"></script>
+<script src="js.js"></script>
+</body>
+</html>
