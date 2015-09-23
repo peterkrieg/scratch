@@ -1,0 +1,26 @@
+@import '../reset';
+
+body{
+	font-size: 30px;
+	text-align: center;
+}
+
+div.form-field{
+	text-align: left;
+}
+input{
+	padding: 5px;
+	margin: 50px;
+	font-size: inherit;
+	margin-top: 100px;
+	text-align: left;
+	&:focus{
+		outline: none;
+	}
+}
+h1{
+	font-size: 40px;
+	background: #4183D7;
+	color: #F5AB35;
+	padding: 10px;
+}
