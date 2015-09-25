@@ -1,12 +1,24 @@
 @import '../reset';
 
 body{
+	background: #eee;
 	font-size: 30px;
 	text-align: center;
 }
 
-div.form-field{
+div.form{
+	margin: 30px 0;
 	text-align: left;
+}
+
+div.form-field{
+	@extend .form;
+	background: lightgreen;
+}
+div.another-form{
+	text-align: left;
+	@extend .form-field;
+	background: lightblue;
 }
 input{
 	padding: 5px;
@@ -14,6 +26,9 @@ input{
 	font-size: inherit;
 	margin-top: 100px;
 	text-align: left;
+	&.description{
+		width: 500px;
+	}
 	&:focus{
 		outline: none;
 	}
