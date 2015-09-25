@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en-us" ng-app>
+<html lang="en-us" ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
 	<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
@@ -15,8 +15,9 @@
 	</div>
 
 	<div class="another-form" ng-controller="AnotherForm">
-		<input type="text" class="description"  placeholder="enter description about yourself here">
-		<p> your description is {{description}} </p>
+		<input type="text" class="description"  ng-model="description" placeholder="enter description about yourself here">
+		<p> your description is: {{description}} </p>
+		<p>Your sentence is: My name is {{name}} and {{description}}</p>
 
 
 		

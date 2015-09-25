@@ -7,8 +7,9 @@
 
 var myApp = angular.module('myApp', []);
 
+
 myApp.controller('AnotherForm', ['$scope', function($scope) {
-	$scope.description = 'I am 22 and enjoy outdoors';
+	$scope.description = 'My name is I am 22 and enjoy outdoors';
 }]);
 
 
