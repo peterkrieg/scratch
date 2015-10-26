@@ -1,15 +1,53 @@
 <!doctype html>
-<html lang="en-us" ng-app	>
+<html lang="en-us" ng-app='myApp'	>
 <head>
 	<meta charset="UTF-8">
 	<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+	<link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body ng-controller="MainController">
 	<h1>{{40/5.3}}</h1>
+	<h2>{{message}}</h2>
+
+	<p>Hello my first name is: {{peter.firstName}}</p> 
+	<p>Last name is: {{peter.lastName}}</p>
+	<p>Age is:  {{peter.age}}</p>
+
+	<div ng-repeat="person in people">
+		<p>{{person.firstName}} {{person.lastName}}</p>
+	</div>
+
+	<div ng-model="animal">
+		<p>{{animal.name}}</p>
+		<p>{{animal.age}}</p>
+	</div>
+
+	<form action="">
+		<input type="text" placeholder="enter username to search here" ng-model="username">
+		<button type="submit">Click here to submit</button>
+	</form>
+
+	<p>Okay, your username is {{username}}</p>
+
+
+	<button class="doSomething" ng-click="doSomething()">Click to alert hi</button>
+
+	<h2>This section is supposed to pull a github username picture, based on what is typed in</h2>
+
+	<form action="">
+		<input type="text" placeholder="enter githbub username, and program will get picture" ng-model="githubUsername">
+		<button ng-click="getPic()">Click Button when done</button>
+
+		<!-- <img ng-src="https://avatars.githubusercontent.com/{{githubUsername}}" alt="" class="githubPic"> -->
+		<img ng-src="{{user.avatar_url" alt="" class="githubPic">
+
+	</form>
+
+
 	
 
 
 	<script src="/codeLib/angular.min.js"></script>
-	<!--<script src="js.js"></script>-->
+	<script src="js.js"></script>
 </body>
 </html>
