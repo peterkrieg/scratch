@@ -34,12 +34,12 @@
 
 	<h2>This section is supposed to pull a github username picture, based on what is typed in</h2>
 
-	<form action="">
+	<form action="" ng-submit="getPic()">
 		<input type="text" placeholder="enter githbub username, and program will get picture" ng-model="githubUsername">
-		<button ng-click="getPic()">Click Button when done</button>
+		<input type="submit">Click Button when done</input>
 
 		<!-- <img ng-src="https://avatars.githubusercontent.com/{{githubUsername}}" alt="" class="githubPic"> -->
-		<img ng-src="{{user.avatar_url" alt="" class="githubPic">
+		<img ng-src="user.avatar_url" alt="" class="githubPic">
 
 	</form>
 

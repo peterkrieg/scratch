@@ -3,7 +3,7 @@ var myApp = angular.module('myApp', []);
 
 
 
-myApp.controller('MainController', ['$scope', '$http', function($scope, $http) {
+myApp.controller('MainController', function($scope, $http) {
 	$scope.description = 'My name is I am 22 and enjoy outdoors';
 	$scope.message = 'hello world!! this is angular message';
 
@@ -81,4 +81,4 @@ function onUserComplete(response){
 
 
 
-}]);
+});

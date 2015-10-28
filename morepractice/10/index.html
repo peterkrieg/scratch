@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en-us" ng-app="myApp">
+<head>
+	<meta charset="UTF-8">
+	<meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-controller="mainCtrl">
+
+	<!-- <div class="box">
+		<button ng-click="scrollDown()">click to scroll down</button>
+	</div>
+	<div id="circle">
+	</div> -->
+	<!--_______Stuff above just to show anchor scroll, kind of useless___-->
+
+	<div class="input-panel">
+		<input type="text" ng-model="githubUsername" placeholder="enter github username here">
+		<button ng-click="getGithub()">Click to get info about Github username</button>
+		<button ng-click="getLotsUsers()">Click to see info about lots of users</button>
+	</div>
+
+	<div class="user-panel" ng-show="showUser">
+		<img ng-src="{{userObj.avatar_url}}" alt="">
+		<ul>
+			<li>login: {{userObj.login}}</li>
+			<li>Name: {{userObj.name}}</li>
+			<li>Site: <a href="{{userObj.blog}}" target="_blank">Link</a></li>
+			<li>Hireable? {{userObj.hireable===true? 'Yes!!':'nope :('}}</li> 
+			<li>Email: {{userObj.email}}</li>
+			<li>#public repos: {{userObj.public_repos}}</li>
+			<li>#followers: {{userObj.followers}}</li>
+			<li>#following: {{userObj.following}}</li>
+		</ul>
+	</div>
+
+	<div class="user-panel" ng-show="showUsers" ng-repeat="userObj in users | filter: myFilter track by $index">
+		<img ng-src="{{userObj.avatar_url}}" alt="">
+		<ul>
+			<li>login: {{userObj.login}}</li>
+			<li>Name: {{userObj.name}}</li>
+
+			<li>Site:  {{userObj.showLink}}</li>
+
+			<li>Hireable? {{userObj.hireable===true? 'Yes!!':'nope :('}}</li> 
+
+			<li>Email: {{userObj.email}}</li>
+			<li>#public repos: {{userObj.public_repos}}</li>
+			<li>#followers: {{userObj.followers}}</li>
+			<li>#following: {{userObj.following}}</li>
+		</ul>
+	</div>
+	
+
+
+
+
+	<script src="/codeLib/jquery.js"></script>
+	<script src="/codeLib/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/mainCtrl.js"></script>
+
+</body>
+</html>

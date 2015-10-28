@@ -1,0 +1,54 @@
+@import "/codeLib/bootstrap/bootstrap";
+
+// div.box{
+// 	height: 1200px;
+// 	background: lightgreen;
+
+// }
+
+// div#circle{
+// 	width: 200px;
+// 	height: 200px;
+// 	border-radius: 100px;
+// 	background: tomato;
+// 	margin: 800px auto;
+// }
+
+//_________________________Code above just for anchor scroll__________________________
+
+
+div.input-panel{
+	text-align: center;
+	margin: 50px 0;
+	input{
+		width: 250px;
+		margin-right: 50px;
+		padding-left: 5px;
+	}
+	button{
+		border-radius: 5px;
+		border: none;
+		&:hover{
+			color: white;
+			background: #222;
+			cursor: pointer;
+		}
+	}
+}
+
+
+div.user-panel{
+	font-size: 20px;
+	padding: 20px;
+	max-width: 900px;
+	background: #ddd;
+	min-height: 500px;
+	margin: auto;
+	border: 2px solid black;
+	text-align: center;
+	img{
+		width: 200px;
+		border-radius: 100px;
+	}
+}
+
