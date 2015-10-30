@@ -29,7 +29,7 @@ function controllerFunc($scope, $anchorScroll, $location, $http){
 	//_________________________For multiple users__________________________
 
 	$scope.getLotsUsers = function(){
-		var usernames= ['lukeschunk', 'peterkrieg', 'peter', 'joe', 'jrobber', 'romines'];
+		var usernames= ['lukeschunk', 'peterkrieg', 'peter', 'joe', 'jrobber', 'romines', 'adam', 'bill', 'jack', 'roger'];
 		var users = [];
 		for(var i=0; i<usernames.length; i++){
 			$http.get("https://api.github.com/users/"+usernames[i]).then(
@@ -42,7 +42,7 @@ function controllerFunc($scope, $anchorScroll, $location, $http){
 				userObj.showLink = "<a href='"+userObj.blog+"'>Link</a>";
 			}
 			else{
-				userObj.showLink = 'no link sory';
+				userObj.showLink = 'no link sorry :(';
 			}
 			users.push(userObj);
 
