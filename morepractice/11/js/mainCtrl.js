@@ -3,46 +3,26 @@ angular.module('myApp')
 
 	function ctrlFunc($scope, instaService){
 		var homeURL = 'http://peterkrieg.com/insta';
-		$scope.getData = function(){
+
+		// function just gets token, based on when user grants insta permission to get info
+		$scope.getToken = function(){
 			var url = window.location.href.toString();
-			var token = url.split('#access_token=')[1];
-			alert(token);
-			// alert(typeof token);
-			// window.history.pushState({}, 'Title', 'http://peterkrieg.com/insta');
-			// alert('changed URL?');
-			// alert(window.location.href.toString());
-
-
-			// if(window.location.href.toString()!==homeURL){
-			// 	window.location.href=homeURL;
-			// 	alert('back at home page');
-			// }
-			
-			// alert('back at insta home page');
-			// alert(token);
+			var token = url.split('#access_token=')[1];  // gets access token given by instagram
+			console.log('access token is '+token);
+			// changes page URL back to home page, instead of messy token attached.  doesn't reload page 
+			window.history.pushState({}, 'Title', homeURL);
+			alert('changed URL?');
 			return token;
 		};
-		var token = $scope.getData();
+		var token = $scope.getToken();
 
-		var userMedia = [];
+		//____________Now that token is received, get instagram media, big array of objects______________________
 
-		instaService.getInstaFeed(token).then(function(dataObj){
-			console.log(dataObj);
-			for(var i=0; i<dataObj.data.length; i++){
-				userMedia.push(dataObj.data[i]);
-			}
-			// userMedia.push(dataObj.data);
+		instaService.getInstaFeed(token).then(function(userMedia){
+			console.log('user media received from service is ... see below');
 			console.log(userMedia);
+			// $scope.userMedia =userMedia;
 		});
-
-
-
-
-
-
-		$scope.message = 'hello';
-
-
 
 
 	}
