@@ -11,7 +11,7 @@ angular.module('myApp')
 			console.log('access token is '+token);
 			// changes page URL back to home page, instead of messy token attached.  doesn't reload page 
 			// window.history.pushState({}, 'Title', homeURL);
-			alert('changed URL?');
+			// alert('changed URL?');
 			return token;
 		};
 		var token = $scope.getToken();
