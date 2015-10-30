@@ -23,7 +23,8 @@ function instaFunc($http, $q){
 				// console.log(response);
 				// console.log(response.data);
 				// console.log(response.data.data);
-				var parsedData = response.data.data;
+				var pictures = response.data;
+				var parsedData = pictures.data;
 				for(var i=0; i<parsedData.length; i++){
 					userMedia.push(parsedData[i]);
 				}
@@ -33,7 +34,7 @@ function instaFunc($http, $q){
 				}
 				else{
 					// recursion each following time
-					eachRequest(response.data.pagination.next_url);
+					eachRequest(pictures.pagination.next_url);
 				}
 				// console.log(parsedData);
 				// console.log('length is'+parsedData.data.length);
