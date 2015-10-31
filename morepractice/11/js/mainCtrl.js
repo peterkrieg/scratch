@@ -21,6 +21,7 @@ angular.module('myApp')
 		instaService.getInstaFeed(token).then(function(userMedia){
 			console.log('user media received from service is ... see below');
 			console.log(userMedia);
+			$scope.userMedia = userMedia;
 			// $scope.userMedia =userMedia;
 		});
 

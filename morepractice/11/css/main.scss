@@ -1,2 +1,9 @@
 @import "/codeLib/bootstrap/bootstrap";
 @import "/codeLib/bourbon/bourbon";
+
+img{
+	width: 400px;
+	&.prof-pic{
+		width: 30px;
+	}
+}

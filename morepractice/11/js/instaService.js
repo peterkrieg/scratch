@@ -35,7 +35,7 @@ function instaFunc($http, $q){
 
 				// last media request if no next_url property, means you're done
 				if(!pictures.pagination.next_url){
-					alert('whats');
+					// alert('whats');
 					deferred.resolve(userMedia);
 				}
 				else{
